@@ -298,7 +298,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        webView.loadUrl("https://github.com/liriliri/eruda")
+        webView.loadUrl("http://localhost:3000")
     }
 
     override fun dispatchTouchEvent(event: MotionEvent): Boolean {
@@ -330,7 +330,7 @@ fun isHttpUrl(url: String): Boolean {
 }
 
 fun mayBeUrl(text: String): Boolean {
-    val domains = arrayOf(".com", ".io", ".me", ".org", ".net", ".tv", ".cn")
+    val domains = arrayOf(".com", ".io", ".me", ".org", ".net", ".tv", ".cn", ".world", ".app")
 
     return domains.any { text.contains(it) }
 }
